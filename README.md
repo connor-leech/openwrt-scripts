@@ -10,7 +10,7 @@ Updates Tailscale to the latest stable version on OpenWRT.
 
 **Usage:**
 ```bash
-wget https://raw.githubusercontent.com/yourusername/openwrt-scripts/main/update-tailscale.sh
+wget https://raw.githubusercontent.com/connor-leech/openwrt-scripts/refs/heads/main/update-tailscale.sh
 chmod +x update-tailscale.sh
 ./update-tailscale.sh
 ```
