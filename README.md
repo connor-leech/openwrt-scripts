@@ -9,6 +9,8 @@ Utility scripts for OpenWRT routers.
 Updates Tailscale to the latest stable version on OpenWRT.
 
 **Usage:**
+SSH into your router, then run:
+
 ```bash
 wget https://raw.githubusercontent.com/connor-leech/openwrt-scripts/refs/heads/main/update-tailscale.sh
 chmod +x update-tailscale.sh
