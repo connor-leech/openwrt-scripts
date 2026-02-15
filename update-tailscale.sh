@@ -41,7 +41,7 @@ echo ""
 
 # Fetch latest version from Tailscale
 echo "Checking for latest version..."
-LATEST_VERSION=$(curl -s https://pkgs.tailscale.com/stable/ | grep -oP 'tailscale_\K[0-9]+\.[0-9]+\.[0-9]+' | head -1)
+LATEST_VERSION=$(wget -qO- https://pkgs.tailscale.com/stable/ | grep -o 'tailscale_[0-9]*\.[0-9]*\.[0-9]*' | head -1 | sed 's/tailscale_//')
 
 if [ -z "$LATEST_VERSION" ]; then
     echo "Failed to fetch latest version. Check your internet connection."
