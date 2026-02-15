@@ -81,7 +81,7 @@ cd /tmp
 rm -f tailscale_*.tgz
 rm -rf tailscale_*_${TS_ARCH}
 
-wget -q --show-progress "$DOWNLOAD_URL" || {
+wget "$DOWNLOAD_URL" || {
     echo "Download failed!"
     /etc/init.d/tailscale start
     exit 1
